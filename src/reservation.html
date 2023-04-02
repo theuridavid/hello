@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEEKAY RENT A RIDE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container {
+            display: flex;
+            border: 5px solid #3e8e41;
+
+            max-width: 1200px;
+        }
+
+        .cols {
+            display: flex;
+
+        }
+
+        .column-1 {
+            flex-basis: 30%;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .column-2 {
+            flex-basis: 70%;
+            padding: 20px;
+        }
+
+        .columns {
+            flex-basis: 25%;
+            padding: 10px;
+        }
+
+        /* styles.css */
+
+        form {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 500px;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 1em;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="name">
+            <h1>TEEKAY RENT-A-RIDE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">ABOUT</a></li>
+                <li><a href="reservation.html">RESERVATION</a></li>
+                <li><a href="enquire.html">ENQUIRE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="column-1">
+                <h2>RESERVE YOUR VEHICLE</h2>
+                <form style="width: 200px;">
+                    <label for="pickup-location">Pickup Location:</label>
+                    <input placeholder="Choose pickup-location"list="pickup-location"><br>
+                    <datalist id="pickup-location">
+                        <option value="Nairobi">Nairobi</option>
+                        <option value="Nakuru">Nakuru</option>
+                        <option value="Rongai">Rongai</option>
+                        <option value="Kisumu">Kisumu</option>
+                        <option value="Kericho">Kericho</option>
+                        <option value="Eldoret">Eldoret</option>
+                        <option value="Mombasa">Mombasa</option>
+                        <option value="Garissa">Garissa</option>
+                    </datalist>
+                    <br>
+                    <br>
+                    <br>
+
+                    <label for="pickup-date">Pickup Date:</label>
+                    <input type="date" id="pickup-date" name="pickup-date"><br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <label for="return-date">Return Date:</label>
+                    <input type="date" id="return-date" name="return-date"><br>
+                    <br>
+                    <br>
+
+                    <input type="submit" value="Find Vehicle">
+                </form>
+
+            </div>
+            <div class="column-2">
+                <h2>CARS AVAILABLE</h2>
+
+                <div class="img"><img src="main.jpg" alt="" width="850" height="500"></div>
+                <div class="cols">
+                    <div class="columns"><img src="cols2.jpg" alt="" width="200" height="200"> </div>
+                    <div class="columns"><img src="cols1.jpg" alt="" width="200" height="200"> </div>
+                    <div class="columns"><img src="cols3.jpg" alt="" width="200" height="200"></div>
+                    <div class="columns"> <img src="cols4.jpg" alt="" width="200" height="200"></div>
+                </div>
+                <hr>
+                <div class="container" style="border: none;">
+                    <div class="column-1" style="flex-basis: 50%; border: none; background-color: white;">
+                        <h2>The Car</h2>
+                        <p><i class="fa fa-fw fa-male"></i>5 Seats</p>
+                        <p><i class="fa fa-fw fa-shopping-bag"></i> Accomodates two bags</p>
+
+                    </div>
+
+                    <div class=" column-2" style="flex-basis: 50%; ">
+                        <p><i class="fa fa-fw fa-child"></i>Child lock enabled</p>
+                        <p> <i class="fa fa-fw fa-tint"></i>Uses diesel </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="rules" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    <h2>Rules</h2>
+                    <p>
+                    <p>Customers must be 21 years or older and hold a valid driver's license to rent a car.</p>
+                    <p>Customers must provide a valid credit card and a government-issued ID to rent a car.</p>
+                    <p>Customers are responsible for any damage caused to the vehicle during the rental period.</p>
+                    <p>Smoking is strictly prohibited in all Teekay Rent-A-Ride vehicles.</p>
+                    <p>Pets are not allowed in Teekay Rent-A-Ride vehicles unless otherwise stated.</p>
+                    <p>Any additional driver must be present at the time of rental and be added to the rental agreement.
+                    </p>
+                    <p>Customers are required to return the vehicle with a full tank of fuel; otherwise, refueling
+                        charges will apply.</p>
+                    <p>Customers must adhere to all traffic laws and regulations.</p>
+                    <p>Vehicles must be returned on the specified return date and time; otherwise, additional charges
+                        may apply.</p>
+                    <p>Late return of the vehicle without prior notification may result in additional charges.</p>
+                    <p><strong>Modes of Payment Accepted:</strong></p>
+                    <ul>
+                        <li>Credit Cards (Visa, Mastercard, American Express) <i class="fa fa-fw fa-credit-card"></i></li>
+                        <li>Debit Cards (with Visa or Mastercard logo)<i class="fa fa-fw fa-cc-mastercard"></i></li>
+                        <li>Cash (with a deposit and pre-authorization on a credit or debit card or bitcoin)<i class="fa fa-fw  fa-bitcoin"></i></li>
+                    </ul>
+                    </p>
+                </div>
+
+            </div>
+
+    </main>
+
+</body>
+
+</html>
