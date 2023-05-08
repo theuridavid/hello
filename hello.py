@@ -4,4 +4,4 @@ while True:
         break
 
 for _ in range(n):
-    print("meow")
+    print("meow meow")
